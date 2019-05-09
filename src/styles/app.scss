@@ -1,0 +1,9 @@
+@import 'colors';
+.app,#root,body,html{
+	height: 100%;
+	overflow: hidden;
+}
+
+.app{
+	display: flex;flex-wrap: wrap;
+}
