@@ -1,3 +1,4 @@
+@import './colors';
 .sidebar{
 	flex: 0 1 20%;
 	min-height: 100%;
@@ -9,7 +10,24 @@
 		margin: 0;
 		list-style: none;
 		li{
-			padding: 15px 10px;
+			display: flex;
+			overflow: hidden;
+			height: auto;
+			& span:first-child{
+				flex: 0 1 30px !important;
+			}
+
+			& a{
+				flex: 0 1 30px !important;
+
+				text-decoration: none;
+				color: cadetblue;
+				padding: 15px 10px;
+			}
+			
+			&:hover{
+				background: $lime-green;
+			}
 		}
 	}
 }

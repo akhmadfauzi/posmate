@@ -6,16 +6,20 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './redux/reducers';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import { faCoffee,faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faSearch, faTachometerAlt, faHistory, faCashRegister, faUsers, faUsersCog, faCog, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faSearch, faCoffee);
+library.add(faSearch, faCoffee, faTachometerAlt, faHistory, faCashRegister, faUsers, faUsersCog, faCog, faFileAlt);
 
 const store = createStore(reducer);
 ReactDOM.render(
-<Provider store={store}>
-	<App />
-</Provider>, document.getElementById('root'));
+	<Router>
+		<Provider store={store}>
+			<App />
+		</Provider>
+	</Router>
+	, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
