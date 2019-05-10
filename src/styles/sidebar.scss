@@ -13,16 +13,23 @@
 			display: flex;
 			overflow: hidden;
 			height: auto;
-			& span:first-child{
-				flex: 0 1 30px !important;
-			}
+			
 
 			& a{
-				flex: 0 1 30px !important;
-
+				flex: 1 1 auto;
+				display: flex;
 				text-decoration: none;
 				color: cadetblue;
 				padding: 15px 10px;
+				& span:first-child{
+					flex: 0 1 30px !important;
+					pointer-events: none;
+				}
+
+				& span{
+					pointer-events: none;
+					flex: 0 1 auto;
+				}
 			}
 			
 			&:hover{
@@ -30,4 +37,8 @@
 			}
 		}
 	}
+}
+
+.menu-active{
+	border-left:4px solid cadetblue;
 }
