@@ -11,7 +11,7 @@ class Customers extends Component {
 	render() {
 		return (
 			<div>
-				
+
 			</div>
 		);
 	}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ProductList from './ProductList';
 
 function mapStateToProps(state) {
 	return {
@@ -9,9 +10,10 @@ function mapStateToProps(state) {
 
 class Selling extends Component {
 	render() {
+		const productList = <ProductList></ProductList>;
 		return (
-			<div>
-				Selling
+			<div className="selling-container">
+				{productList}
 			</div>
 		);
 	}

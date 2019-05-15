@@ -1,0 +1,25 @@
+.menus{
+	&__header{
+		ul{
+			display: flex;
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			
+			li{
+				flex: 1 1 auto;
+				display: flex;
+				
+				a{
+					display: flex;
+					flex: 1 1 auto;
+					justify-content: center;
+					text-decoration: none;
+					padding:10px 0;
+					background: #ccc;
+					color:#fff;
+				}
+			}
+		}
+	}
+}

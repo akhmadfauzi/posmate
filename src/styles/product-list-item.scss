@@ -1,0 +1,18 @@
+@import "colors";
+
+.product-list-item{
+	height: 150px;
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	border: .5px solid #ccc;
+	margin: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	// img{
+	// 	max-width: 100%;
+	// 	width: auto;
+	// 	max-height: 50px;
+	// 	height: auto;
+	// }
+} 

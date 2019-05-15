@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import '../styles/sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 function mapStateToProps(state) {
 	return {
@@ -30,6 +30,7 @@ class Sidebar extends Component {
 					<li><Link onClick={this.menuOnClick} onBlur={this.menuOnBlur} to="/users"><span><FontAwesomeIcon size="sm" icon="users-cog"></FontAwesomeIcon></span> <span>Users</span></Link></li>
 					<li><Link onClick={this.menuOnClick} onBlur={this.menuOnBlur} to="/report"><span><FontAwesomeIcon size="sm" icon="file-alt"></FontAwesomeIcon></span> <span>Report</span></Link></li>
 					<li><Link onClick={this.menuOnClick} onBlur={this.menuOnBlur} to="/settings"><span><FontAwesomeIcon size="sm" icon="cog"></FontAwesomeIcon></span> <span>Settings</span></Link></li>
+					{/* <li><Link onClick={this.menuOnClick} onBlur={this.menuOnBlur} to="/menus"><span><FontAwesomeIcon size="sm" icon="cog"></FontAwesomeIcon></span> <span>Menus</span></Link></li> */}
 				</ul>
 			</aside>
 		);
