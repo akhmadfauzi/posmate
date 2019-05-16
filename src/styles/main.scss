@@ -1,8 +1,13 @@
-@import './colors';
+@import "./colors";
 
-.main{
-	flex: 0 1 79%;
-	padding: .5%;
-	overflow: auto !important;
+.main {
+  flex: 0 1 79.4%;
+  padding: 0.5%;
+  overflow: auto !important;
+  height: 91.5%;
 
+  &-selling{
+  flex: 0 1 50% !important;
+
+  }
 }

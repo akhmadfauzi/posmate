@@ -13,9 +13,10 @@ class Dashboard extends Component {
 		return (
 			<div className="dashboard">
 				<section className="dashboard__header-chart">
-					<div><span><FontAwesomeIcon size="3x" icon="shopping-cart"></FontAwesomeIcon></span><span>Sales</span></div>
+				dashboard
+					{/* <div><span><FontAwesomeIcon size="3x" icon="shopping-cart"></FontAwesomeIcon></span><span>Sales</span></div>
 					<div><span><FontAwesomeIcon size="3x" icon="users"></FontAwesomeIcon></span><span>Customers</span></div>
-					<div><span><FontAwesomeIcon size="3x" icon="shopping-cart"></FontAwesomeIcon></span><span>Active orders</span></div>
+					<div><span><FontAwesomeIcon size="3x" icon="shopping-cart"></FontAwesomeIcon></span><span>Active orders</span></div> */}
 				</section>
 			</div>
 		);

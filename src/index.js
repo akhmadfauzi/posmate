@@ -8,9 +8,9 @@ import { createStore } from 'redux';
 import reducer from './redux/reducers';
 import { BrowserRouter as Router } from "react-router-dom";
 
-import { faCoffee, faSearch, faTachometerAlt, faHistory, faCashRegister, faUsers, faUsersCog, faCog, faFileAlt,faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faSearch, faTachometerAlt, faHistory, faCashRegister, faUsers, faUsersCog, faCog, faFileAlt,faShoppingCart,faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faSearch, faCoffee, faTachometerAlt, faHistory, faCashRegister, faUsers, faUsersCog, faCog, faFileAlt,faShoppingCart);
+library.add(faSearch, faCoffee, faTachometerAlt, faHistory, faCashRegister, faUsers, faUsersCog, faCog, faFileAlt,faShoppingCart,faCaretDown);
 
 const store = createStore(reducer);
 ReactDOM.render(

@@ -10,7 +10,7 @@ function mapStateToProps(state) {
 
 class ProductListItem extends Component {
 	render() {
-		const img = 'https://imgplaceholder.com/200x100/fff/333333/fa-image';
+		const img = 'https://imgplaceholder.com/100x100/fff/333333/fa-image';
 		return (
 			<div className="product-list-item">
 				<div className="product-image">

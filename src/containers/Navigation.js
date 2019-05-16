@@ -14,8 +14,13 @@ class Navigation extends Component {
 		return (
 			<nav className="navbar">
 				<div className="navbar-brand">POSmate</div>
-				<div className="navbar-search"><label htmlFor="SearchBar"><FontAwesomeIcon icon="search"></FontAwesomeIcon></label><input type="text" id="SearchBar" /></div>
-				<div className="navbar-profile">profile</div>
+				
+				<div className="navbar-profile">
+					<div className="image">
+						<img src="https://imgplaceholder.com/50x50/fff/333333/fa-user" alt=""/>
+					</div>
+					<div className="name">Jane Doe <FontAwesomeIcon icon="caret-down"></FontAwesomeIcon></div>
+				</div>
 			</nav>
 		);
 	}

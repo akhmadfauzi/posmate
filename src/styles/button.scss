@@ -1,0 +1,16 @@
+@import 'colors';
+.button{
+	padding: 10px;
+	border:1px solid #ccc;
+	background: #ccc;
+
+	&-primary{
+		border:1px solid $lime-green;
+		background: $lime-green;
+	}
+
+	&-block{
+		width: 100%;
+	}
+
+}

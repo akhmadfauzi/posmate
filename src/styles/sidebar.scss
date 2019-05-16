@@ -1,44 +1,45 @@
-@import './colors';
-.sidebar{
-	flex: 0 1 20%;
-	min-height: 100%;
-	height: auto;
-	display: block;
+@import "./colors";
 
-	ul{
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		li{
-			display: flex;
-			overflow: hidden;
-			height: auto;
-			
+.sidebar {
+  flex: 0 1 19.5%;
+  min-height: 92.5%;
+  height: auto;
+  display: block;
+  border-right: .5px solid #ccc;
 
-			& a{
-				flex: 1 1 auto;
-				display: flex;
-				text-decoration: none;
-				color: cadetblue;
-				padding: 15px 10px;
-				& span:first-child{
-					flex: 0 1 30px !important;
-					pointer-events: none;
-				}
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: flex;
+      overflow: hidden;
+      height: auto;
 
-				& span{
-					pointer-events: none;
-					flex: 0 1 auto;
-				}
-			}
-			
-			&:hover{
-				background: $lime-green;
-			}
-		}
-	}
+      & a {
+        flex: 1 1 auto;
+        display: flex;
+        text-decoration: none;
+        color: cadetblue;
+        padding: 15px 10px;
+        & span:first-child {
+          flex: 0 1 30px !important;
+          pointer-events: none;
+        }
+
+        & span {
+          pointer-events: none;
+          flex: 0 1 auto;
+        }
+      }
+
+      &:hover {
+        background: $lime-green;
+      }
+    }
+  }
 }
 
-.menu-active{
-	border-left:4px solid cadetblue;
+.menu-active {
+  border-left: 4px solid cadetblue;
 }

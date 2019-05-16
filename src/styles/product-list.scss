@@ -1,5 +1,23 @@
 .product-list {
+ 
   display: flex;
-  flex: 1 1 80%;
+  flex: 1 1 auto;
   flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.product-category {
+  margin: 10px 5px 5px 5px;
+  display: flex;
+
+  &-item{
+	  border: 1px solid #ccc;
+	  border-radius: 3px;
+	  padding: 5px 10px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-right: 5px;
+	  flex: 1 1 auto;
+  }
 }
